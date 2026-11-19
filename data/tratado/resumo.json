@@ -1,0 +1,59 @@
+{
+  "linhas_brutas": 6025,
+  "linhas_tratadas": 5949,
+  "linhas_entregues": 5412,
+  "descartes": {
+    "entrega_antes_do_pedido": 12,
+    "entrega_ausente": 3,
+    "id_duplicado": 25,
+    "quantidade_invalida": 29,
+    "sku_sem_cadastro": 7
+  },
+  "receita_entregue": 779779.75,
+  "margem_entregue": 413335.25,
+  "margem_pct": 0.5301,
+  "pct_no_prazo": 0.5746,
+  "taxa_cancelamento": 0.0903,
+  "skus_para_80_pct": 10,
+  "centro_menor_prazo": {
+    "centro": "Quilha",
+    "pct_no_prazo": 0.241,
+    "atraso_medio": 1.56
+  },
+  "canal_menor_margem": {
+    "canal": "site",
+    "margem_pct": 0.4921,
+    "desconto_medio": 0.1646
+  },
+  "top_skus": [
+    {
+      "sku": "ESC-04",
+      "produto": "Luminaria mesa",
+      "receita": 122004.71
+    },
+    {
+      "sku": "COZ-01",
+      "produto": "Panela 2 litros",
+      "receita": 108622.82
+    },
+    {
+      "sku": "COZ-02",
+      "produto": "Frigideira 24 cm",
+      "receita": 94682.35
+    }
+  ],
+  "receita_mensal": {
+    "2025-01": 66011.44,
+    "2025-02": 56393.28,
+    "2025-03": 59234.06,
+    "2025-04": 70262.16,
+    "2025-05": 68120.14,
+    "2025-06": 70233.09,
+    "2025-07": 68896.69,
+    "2025-08": 64378.21,
+    "2025-09": 69036.98,
+    "2025-10": 65871.77,
+    "2025-11": 56238.5,
+    "2025-12": 65103.43
+  }
+}

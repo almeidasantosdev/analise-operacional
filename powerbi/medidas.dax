@@ -1,0 +1,50 @@
+Receita Liquida =
+CALCULATE (
+    SUM ( itens[receita_liquida] ),
+    itens[situacao] = "entregue"
+)
+
+Margem =
+CALCULATE (
+    SUM ( itens[margem] ),
+    itens[situacao] = "entregue"
+)
+
+Margem Pct =
+DIVIDE ( [Margem], [Receita Liquida] )
+
+Linhas Entregues =
+CALCULATE (
+    COUNTROWS ( itens ),
+    itens[situacao] = "entregue"
+)
+
+Linhas No Prazo =
+CALCULATE (
+    COUNTROWS ( itens ),
+    itens[no_prazo] = 1
+)
+
+Pct No Prazo =
+DIVIDE ( [Linhas No Prazo], [Linhas Entregues] )
+
+Atraso Medio =
+CALCULATE (
+    AVERAGE ( itens[atraso_dias] ),
+    itens[situacao] = "entregue"
+)
+
+Taxa Cancelamento =
+DIVIDE (
+    CALCULATE ( COUNTROWS ( itens ), itens[situacao] = "cancelado" ),
+    COUNTROWS ( itens )
+)
+
+Desconto Medio =
+CALCULATE (
+    AVERAGE ( itens[desconto] ),
+    itens[situacao] = "entregue"
+)
+
+Pedidos =
+DISTINCTCOUNT ( itens[pedido] )
